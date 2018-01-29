@@ -6,16 +6,22 @@
 }
 
 .gallery .photos {
+    position: relative;
     margin-bottom: 30px;
+    height: 338px;
+    z-index: 10;
 }
 .gallery img{
-    display: none;
+    position: absolute;
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    transition: all 2s ease;
+    z-index: 15;
 }
 
-.gallery img:first-child {
-    display: block;
+.gallery img.showed {
+    opacity: 1;
 }
 
 .gallery .buttons {
@@ -24,5 +30,31 @@
 }
 
 .gallery .btn {
+    cursor: pointer;
+}
+
+.gallery .btn {
     padding: 15px 30px;
+}
+
+.gallery .stop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.gallery .stop.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+.gallery .stop img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
 }
