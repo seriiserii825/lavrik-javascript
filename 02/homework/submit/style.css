@@ -1,0 +1,54 @@
+@import "../../../style.css";
+
+.myForm {
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    margin-right: 10px;
+    height: 30px;
+    text-indent: 15px;
+    line-height: 30px;
+    border: none;
+}
+
+input[type="text"].succes,
+input[type="email"].succes,
+input[type="number"].succes {
+    background: lightgreen;
+}
+
+input[type="text"].error,
+input[type="email"].error,
+input[type="number"].error {
+    background: lightpink;
+}
+
+input[type="submit"] {
+    padding: 8px 30px;
+}
+
+.result {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    trasnition: all .8s ease;
+    opacity: 0;
+}
+
+.result.succes {
+    color: green;
+    opacity: 1;
+}
+
+.result.error {
+    color: red;
+    opacity: 1;
+}

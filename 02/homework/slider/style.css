@@ -1,0 +1,31 @@
+@import "../../../style.css";
+
+.gallery {
+    position: relative;
+    margin: 80px auto 20px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+}
+
+.gallery img.showed {
+    opacity: 1;
+}
+
+.buttons {
+    display: table;
+    margin: 0 auto;
+}
+
+.buttons .btn {
+    padding: 8px 15px;
+}
