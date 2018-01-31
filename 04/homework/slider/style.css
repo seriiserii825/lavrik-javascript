@@ -1,0 +1,31 @@
+@import "../../../style.css";
+
+.slider {
+  margin: 60px auto 20px;
+  width: 600px;
+  height: 335px;
+}
+
+.gallery {
+  position: relative;
+  margin-bottom: 30px;
+  height: 338px;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+
+img.showed {
+  display: block;
+}
+
+.btn {
+  padding: 10px 15px;
+  cursor: pointer;
+}
